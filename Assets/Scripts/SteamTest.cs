@@ -8,9 +8,9 @@ public class SteamTest : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(!SteamManager.Initialized) {return;}
-        string name = SteamFriends.GetPersonaName();
-        Debug.Log(name);
+        // if(!SteamManager.Initialized) {return;}
+        // string name = SteamFriends.GetPersonaName();
+        // Debug.Log(name);
     }
 
     // Update is called once per frame
