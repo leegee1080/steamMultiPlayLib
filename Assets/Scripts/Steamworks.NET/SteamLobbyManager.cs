@@ -96,7 +96,7 @@ public class SteamLobbyManager : SteamManager
 		CallResult<LobbyCreated_t> m_LobbyCreatedCallResult = CallResult<LobbyCreated_t>.Create(StoreNewLobbyData);
         if (onLobbyCreated_callback!=null)
             this.event_lobby_created+=onLobbyCreated_callback;
-        m_LobbyCreatedCallResult.Set(SteamMatchmaking.CreateLobby(ELobbyType.k_ELobbyTypePrivate, 8));
+        m_LobbyCreatedCallResult.Set(SteamMatchmaking.CreateLobby(ELobbyType.k_ELobbyTypeFriendsOnly, 8));
         Debug.Log(this.GetType()+": Opening lobby...");
     }
     private void StoreNewLobbyData(LobbyCreated_t pCallback, bool bIOFailure){
